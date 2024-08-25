@@ -1,0 +1,307 @@
+nav {
+    width: 100%;
+    height: 7vw;
+    background: linear-gradient(125deg, #e61b36, #9c1032);
+}
+
+.nav-container {
+    margin-bottom: 20px;
+    max-width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.logonav {
+    width: 15vw;
+    object-fit: contain;
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+.nav-profile-name {
+    color: #ffffff;
+    font-size: 2vw;
+    margin-right: 30px;
+}
+
+.fa-cart-shopping {
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+.nav-profile-cart {
+    position: relative;
+
+}
+
+.cartcount {
+    position: absolute;
+    top: -15px;
+    right: -13px;
+    width: 1.7vw;
+    height: 1.7vw;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.navbar-brand {
+    width: 3.5vw;
+    object-fit: contain;
+    position: relative;
+    margin-left: 30px;
+}
+
+.nav-out {
+    color: #fff;
+    font-size: 1.2vw;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ปรับรูปแบบ Container */
+
+.containerm {
+
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.containertop {
+    width: 90vw;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product {
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.sideber-search {
+    padding: 10px;
+    border: 2px solid transparent;
+    width: 100%;
+    font-size: 1.2vw;
+    outline: none;
+    border-radius: 5px;
+    background: #f2f2f2;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.sideber-search:focus {
+    border: 2px solid #e61b36;
+}
+
+.sidebar-item {
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    color: #000000;
+    transition: 0.3s;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+
+.sidebar-item:hover {
+    background: #9c1032;
+    color: #fff;
+}
+
+.product-items {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-items:hover {
+    transform: scale(1.03);
+}
+
+.product-img {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 17vw;
+    border-radius: 10px;
+}
+
+
+.modal,
+.modal-bg {
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-page {
+    z-index: 99;
+    min-width: 30vw;
+    max-width: 60vw;
+    max-height: 30vw;
+    overflow: scroll;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.modaldesc-content {
+    width: 100%;
+    display: flex;
+}
+
+.modaldesc-detail {
+    margin-left: 20px;
+}
+
+.modaldesc-img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.btn-control {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    transition: 0.3s;
+}
+
+.btn-buy {
+    background: linear-gradient(125deg, #e61b36, #9c1032);
+    color: #ffffff !important;
+    /* สีฟอนต์เป็นสีขาว */
+    border: none;
+    /* เอาขอบของปุ่มออก */
+    padding: 10px 20px;
+    /* เพิ่มระยะห่างภายในปุ่ม */
+    font-size: 1.2vw;
+    /* ขนาดฟอนต์ */
+    text-align: center;
+    /* จัดข้อความให้ตรงกลาง */
+    border-radius: 5px;
+    /* ทำมุมของปุ่มให้โค้งมน */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+    transition: background 0.3s ease;
+    /* เพิ่มการเปลี่ยนแปลงสีปุ่มเมื่อวางเมาส์ */
+
+}
+
+
+
+.cartlist {}
+
+.cartlist-item {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cartlist-left {
+    display: flex;
+}
+
+.cartlist-right {
+    display: flex;
+    align-items: center;
+}
+
+.cartlist-left img {
+    width: 5wv;
+    height: 5vw;
+    object-fit: fill;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btnc {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+/* Additional CSS for Shopping Cart */
+.container-cart {
+    margin-top: 50px;
+}
+
+.table-bordered th,
+.table-bordered td {
+    vertical-align: middle;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: white;
+}
